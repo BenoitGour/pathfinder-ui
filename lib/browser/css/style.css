@@ -1,13 +1,14 @@
 * {
     box-sizing: border-box;
 }
+
 h4 {
     margin: 0 0 10px 0;
     display: block;
     font-size: 16px;
 }
 
-h4 span{
+h4 span {
     font-size: 14px;
     font-weight: normal;
 }
@@ -16,8 +17,8 @@ h4 span{
     cursor: pointer;
 }
 
-.overlay{
-    background-color:#EEE;
+.overlay {
+    background-color: #eee;
 }
 
 .node circle {
@@ -32,8 +33,8 @@ h4 span{
 }
 
 .node text {
-    font-size:10px;
-    font-family:sans-serif;
+    font-size: 10px;
+    font-family: sans-serif;
 }
 
 .link {
@@ -48,11 +49,12 @@ h4 span{
     stroke-width: 3px;
 }
 
-.ghostCircle.show{
-    display:block;
+.ghostCircle.show {
+    display: block;
 }
 
-.ghostCircle, .activeDrag .ghostCircle{
+.ghostCircle,
+.activeDrag .ghostCircle {
     display: none;
 }
 
@@ -80,8 +82,8 @@ h4 span{
     background: #fff;
 }
 
-.right-bar .resize-tab{
-    float:left;
+.right-bar .resize-tab {
+    float: left;
     top: -1px;
     padding: 0px;
     display: flex;
@@ -93,11 +95,12 @@ h4 span{
     overflow: hidden;
     position: relative;
     margin-left: -20px;
-    margin-top:calc(50vh - 25px);
+    margin-top: calc(50vh - 25px);
     z-index: 2;
 }
+
 .slide {
-    -webkit-transition:width 0.5s ease-in-out;
+    -webkit-transition: width 0.5s ease-in-out;
     transition: width 0.5s ease-in-out;
 }
 
@@ -107,28 +110,30 @@ h4 span{
     height: 20px;
     z-index: 2;
 }
+
 .resize-icon:hover {
     cursor: ew-resize;
 }
+
 .slide-icon {
     position: absolute;
-    left:0;
+    left: 0;
     bottom: 2px;
     width: 20px;
     height: 20px;
 }
 
-.slide-icon{
+.slide-icon {
     cursor: pointer;
 }
 
-.shifter{
+.shifter {
     left: 0;
 }
 
 .clearfix:before,
 .clearfix:after {
-    content: "";
+    content: '';
     display: table;
 }
 
@@ -147,9 +152,10 @@ h4 span{
 #response {
     width: 100%;
 }
+
 #response pre {
     white-space: normal;
-    font-family: RobotoDraft,Roboto,'Helvetica Neue',sans-serif;
+    font-family: RobotoDraft, Roboto, 'Helvetica Neue', sans-serif;
 }
 
 #response pre br {
@@ -163,26 +169,30 @@ h4 span{
     /*background: #272822;*/
     white-space: pre-wrap;
 }
+
 #response code {
     white-space: pre-wrap;
 }
 
 .routeTableRow {
-    border-top: 1px solid #D3D3D3;
+    border-top: 1px solid #d3d3d3;
     padding: 5px;
 }
 
 .routeTableCol {
-    border-right: 1px solid #D3D3D3;
+    border-right: 1px solid #d3d3d3;
     padding: 5px;
 }
 
 #routeTable {
-  width: 100%;
+    width: 100%;
 }
 
 .md-button {
-    padding: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     margin: 0px;
 }
 
@@ -190,6 +200,12 @@ h4 span{
     word-wrap: break-word;
     line-height: 1.25em;
 }
+
+
+md-card-title {
+    padding: 24px 16px 16px !important;
+}
+
 /*
 .right-bar {
 	width: 30%;
