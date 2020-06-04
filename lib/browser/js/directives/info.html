@@ -15,8 +15,7 @@
 						</p>
 						<md-divider></md-divider>
 						<pre>
-
-							{{routeInfo().details | json}}
+							{{info.details | json}}
 						</pre>
 					</md-card-content>
 				</md-card>
@@ -24,6 +23,7 @@
 		</md-content>
 	</div>
 </div>
-<pre ng-if="routeInfo().length > 0">
+
+<!-- <pre ng-if="routeInfo().length > 0">
 	{{routeInfo() | json}}
-</pre>
+</pre> -->
