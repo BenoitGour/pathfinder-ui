@@ -14,6 +14,10 @@
 						<p>
 							{{info.description}}
 						</p>
+						<pre>
+							routeinfo:
+							{{routeInfo().details | json}}
+						</pre>
 					</md-card-content>
 				</md-card>
 			</div>
@@ -22,5 +26,5 @@
 </div>
 <pre>
 	routeinfo:
-	{{routeInfo()}}
+	{{routeInfo() | json}}
 </pre>
