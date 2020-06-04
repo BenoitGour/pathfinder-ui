@@ -3,7 +3,7 @@
 
 		<md-content class="md-padding" layout-xs="column" layout="row">
 			<div flex-xs flex-gt-xs="50" layout="column">
-				<md-card ng-repeat="info in routeInfo()" md-theme="default" md-theme-watch>
+				<md-card ng-repeat="info in routeInfo()">
 					<md-card-title>
 						<md-card-title-text>
 							<span class="md-headline">{{info.name}}</span>
@@ -24,7 +24,6 @@
 		</md-content>
 	</div>
 </div>
-<pre>
-	routeinfo:
+<pre ng-if="routeInfo().length > 0">
 	{{routeInfo() | json}}
 </pre>
