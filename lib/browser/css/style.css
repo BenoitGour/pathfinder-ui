@@ -202,7 +202,7 @@ h4 span {
 }
 
 md-card-title {
-	padding: 24px 16px 16px;
+	padding: 24px 16px 16px !important;
 }
 
 /*
