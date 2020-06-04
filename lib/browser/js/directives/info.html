@@ -1,5 +1,6 @@
 <div flex layout="row" layout-align="center center">
-	<div ng-if="routeInfo().lenght > 0">
+	<div>
+		<!-- ng-if="routeInfo().lenght > 0" -->
 		<md-content class="md-padding" layout-xs="column" layout="row">
 			<div flex-xs flex-gt-xs="50" layout="column">
 				<md-card ng-repeat="info in routeInfo()">
@@ -19,6 +20,6 @@
 	</div>
 </div>
 <pre>
-	routeinfo
-	{{routeInfo}}
+	routeinfo:
+	{{routeInfo()}}
 </pre>
