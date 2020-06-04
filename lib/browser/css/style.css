@@ -1,4 +1,4 @@
-/* * {
+* {
     box-sizing: border-box;
 }
 
@@ -166,7 +166,7 @@ h4 span {
     margin-top: 0px;
     padding: 10px 15px;
     background: #f5f2f0;
-
+    /*background: #272822;*/
     white-space: pre-wrap;
 }
 
@@ -188,7 +188,6 @@ h4 span {
     width: 100%;
 }
 
-*/
 .md-button {
     padding-left: 10px;
     padding-right: 10px;
