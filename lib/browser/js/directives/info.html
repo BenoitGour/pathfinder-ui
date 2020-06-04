@@ -3,8 +3,7 @@
 
 		<md-content class="md-padding" layout-xs="column" layout="row">
 			<div flex-xs flex-gt-xs="50" layout="column">
-				<md-card ng-repeat="info in routeInfo()" md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}"
-					md-theme-watch>
+				<md-card ng-repeat="info in routeInfo()" md-theme="default" md-theme-watch>
 					<md-card-title>
 						<md-card-title-text>
 							<span class="md-headline">{{info.name}}</span>
@@ -14,8 +13,9 @@
 						<p>
 							{{info.description}}
 						</p>
+						<md-divider></md-divider>
 						<pre>
-							routeinfo:
+
 							{{routeInfo().details | json}}
 						</pre>
 					</md-card-content>
