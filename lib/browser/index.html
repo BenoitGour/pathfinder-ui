@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html ng-app='pathfinderApp' ng-controller='MainController'>
 
 <head lang="en">
 	<meta charset="UTF-8">
-	<title>Pathfinder-UI</title>
+	<title>{{ title }}</title>
 	<link rel="stylesheet"
 		href="https://ajax.googleapis.com/ajax/libs/angular_material/0.10.0/angular-material.min.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -13,7 +13,7 @@
 
 </head>
 
-<body ng-app='pathfinderApp' ng-controller='MainController'>
+<body>
 
 	<md-content class='md-padding'>
 
@@ -109,7 +109,6 @@
 
 
 	<!-- Directives -->
-
 	<script src="js/directives/tab-directives.js"></script>
 	<script src="js/directives/D3directive.js"></script>
 	<script src="js/directives/reqForm-directive.js"></script>
