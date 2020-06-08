@@ -1,11 +1,11 @@
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 h4 {
-    margin: 0 0 10px 0;
-    display: block;
-    font-size: 16px;
+	margin: 0 0 10px 0;
+	display: block;
+	font-size: 16px;
 }
 
 h4 span {
@@ -14,7 +14,7 @@ h4 span {
 }
 
 .node {
-    cursor: pointer;
+	cursor: pointer;
 }
 
 .overlay {
@@ -22,14 +22,14 @@ h4 span {
 }
 
 .node circle {
-    fill: #fff;
-    stroke: steelblue;
-    stroke-width: 1.5px;
+	fill: #fff;
+	stroke: steelblue;
+	stroke-width: 1.5px;
 }
 
 .visual svg {
-    width: 100%;
-    height: 100vh;
+	width: 100%;
+	height: 100vh;
 }
 
 .node text {
@@ -38,15 +38,15 @@ h4 span {
 }
 
 .link {
-    fill: none;
-    stroke: #ccc;
-    stroke-width: 1.5px;
+	fill: none;
+	stroke: #ccc;
+	stroke-width: 1.5px;
 }
 
 .templink {
-    fill: none;
-    stroke: red;
-    stroke-width: 3px;
+	fill: none;
+	stroke: red;
+	stroke-width: 3px;
 }
 
 .ghostCircle.show {
@@ -59,27 +59,27 @@ h4 span {
 }
 
 #visualContainer {
-    width: 70%;
+	width: 70%;
 }
 
 .visual {
-    width: 100%;
-    display: inline-block;
+	width: 100%;
+	display: inline-block;
 }
 
 .reqForm-container {
-    width: 90%;
+	width: 90%;
 }
 
 #route-tree {
-    width: 100%;
+	width: 100%;
 }
 
 .right-bar {
-    width: 33.33%;
-    min-width: 33.33%;
-    border: 1px solid #ddd;
-    background: #fff;
+	width: 33.33%;
+	min-width: 33.33%;
+	border: 1px solid #ddd;
+	background: #fff;
 }
 
 .right-bar .resize-tab {
@@ -105,14 +105,14 @@ h4 span {
 }
 
 .resize-icon {
-    position: absolute;
-    top: 3px;
-    height: 20px;
-    z-index: 2;
+	position: absolute;
+	top: 3px;
+	height: 20px;
+	z-index: 2;
 }
 
 .resize-icon:hover {
-    cursor: ew-resize;
+	cursor: ew-resize;
 }
 
 .slide-icon {
@@ -138,19 +138,19 @@ h4 span {
 }
 
 .clearfix:after {
-    clear: both;
+	clear: both;
 }
 
 .clearfix {
-    *zoom: 1;
+	*zoom: 1;
 }
 
 #pastReq {
-    padding-top: 14px;
+	padding-top: 14px;
 }
 
 #response {
-    width: 100%;
+	width: 100%;
 }
 
 #response pre {
@@ -159,19 +159,19 @@ h4 span {
 }
 
 #response pre br {
-    margin: 0;
+	margin: 0;
 }
 
 #response pre pre {
-    margin-top: 0px;
-    padding: 10px 15px;
-    background: #f5f2f0;
-    /*background: #272822;*/
-    white-space: pre-wrap;
+	margin-top: 0px;
+	padding: 10px 15px;
+	background: #f5f2f0;
+	/*background: #272822;*/
+	white-space: pre-wrap;
 }
 
 #response code {
-    white-space: pre-wrap;
+	white-space: pre-wrap;
 }
 
 .routeTableRow {
@@ -197,8 +197,8 @@ h4 span {
 }
 
 #historicalUrl {
-    word-wrap: break-word;
-    line-height: 1.25em;
+	word-wrap: break-word;
+	line-height: 1.25em;
 }
 
 
