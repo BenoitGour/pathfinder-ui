@@ -11,7 +11,7 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css" />
 
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/styles/default.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/styles/github.min.css">
 
 </head>
 
@@ -52,7 +52,9 @@
 				<md-content>
 
 					<md-tabs md-selected="selectedIndex" md-border-bottom md-dynamic-height>
-
+						<md-tab label="Info">
+							<infotab></infotab>
+						</md-tab>
 						<md-tab label="Send">
 							<div ng-controller='SubTabsController'>
 								<md-tabs md-selected="selectedIndex">
@@ -70,9 +72,7 @@
 						<md-tab label="Response">
 							<tab3></tab3>
 						</md-tab>
-						<md-tab label="Info">
-							<infotab></infotab>
-						</md-tab>
+
 					</md-tabs>
 
 				</md-content>
@@ -126,14 +126,7 @@
 	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/highlight.min.js"></script>
 	<script>hljs.initHighlightingOnLoad();</script>
 
-	<script>
-		angular.element(document).ready(function () {
-			console.log('page loading completed 1');
-		});
-		angular.element(function () {
-			console.log('page loading completed 2');
-		});
-	</script>
+
 </body>
 
 </html>

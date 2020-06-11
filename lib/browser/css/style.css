@@ -9,8 +9,8 @@ h4 {
 }
 
 h4 span {
-    font-size: 14px;
-    font-weight: normal;
+	font-size: 14px;
+	font-weight: normal;
 }
 
 .node {
@@ -18,7 +18,7 @@ h4 span {
 }
 
 .overlay {
-    background-color: #eee;
+	background-color: #eee;
 }
 
 .node circle {
@@ -33,8 +33,8 @@ h4 span {
 }
 
 .node text {
-    font-size: 10px;
-    font-family: sans-serif;
+	font-size: 10px;
+	font-family: sans-serif;
 }
 
 .link {
@@ -50,12 +50,12 @@ h4 span {
 }
 
 .ghostCircle.show {
-    display: block;
+	display: block;
 }
 
 .ghostCircle,
 .activeDrag .ghostCircle {
-    display: none;
+	display: none;
 }
 
 #visualContainer {
@@ -83,25 +83,25 @@ h4 span {
 }
 
 .right-bar .resize-tab {
-    float: left;
-    top: -1px;
-    padding: 0px;
-    display: flex;
-    width: 20px;
-    height: 50px;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-right: 1px solid #fff;
-    overflow: hidden;
-    position: relative;
-    margin-left: -20px;
-    margin-top: calc(50vh - 25px);
-    z-index: 2;
+	float: left;
+	top: -1px;
+	padding: 0px;
+	display: flex;
+	width: 20px;
+	height: 50px;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-right: 1px solid #fff;
+	overflow: hidden;
+	position: relative;
+	margin-left: -20px;
+	margin-top: calc(50vh - 25px);
+	z-index: 2;
 }
 
 .slide {
-    -webkit-transition: width 0.5s ease-in-out;
-    transition: width 0.5s ease-in-out;
+	-webkit-transition: width 0.5s ease-in-out;
+	transition: width 0.5s ease-in-out;
 }
 
 .resize-icon {
@@ -116,25 +116,25 @@ h4 span {
 }
 
 .slide-icon {
-    position: absolute;
-    left: 0;
-    bottom: 2px;
-    width: 20px;
-    height: 20px;
+	position: absolute;
+	left: 0;
+	bottom: 2px;
+	width: 20px;
+	height: 20px;
 }
 
 .slide-icon {
-    cursor: pointer;
+	cursor: pointer;
 }
 
 .shifter {
-    left: 0;
+	left: 0;
 }
 
 .clearfix:before,
 .clearfix:after {
-    content: '';
-    display: table;
+	content: '';
+	display: table;
 }
 
 .clearfix:after {
@@ -154,8 +154,8 @@ h4 span {
 }
 
 #response pre {
-    white-space: normal;
-    font-family: RobotoDraft, Roboto, 'Helvetica Neue', sans-serif;
+	white-space: normal;
+	font-family: RobotoDraft, Roboto, 'Helvetica Neue', sans-serif;
 }
 
 #response pre br {
@@ -175,25 +175,25 @@ h4 span {
 }
 
 .routeTableRow {
-    border-top: 1px solid #d3d3d3;
-    padding: 5px;
+	border-top: 1px solid #d3d3d3;
+	padding: 5px;
 }
 
 .routeTableCol {
-    border-right: 1px solid #d3d3d3;
-    padding: 5px;
+	border-right: 1px solid #d3d3d3;
+	padding: 5px;
 }
 
 #routeTable {
-    width: 100%;
+	width: 100%;
 }
 
 .md-button {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    margin: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin: 0px;
 }
 
 #historicalUrl {
@@ -201,9 +201,21 @@ h4 span {
 	line-height: 1.25em;
 }
 
+pre {
+	max-width: 400px;
+	width: 100%;
+	align-content: center;
+	display: flex;
+}
+
+code {
+	border-radius: 4px !important;
+	border: 1px solid rgba(0, 0, 0, 0.25);
+	min-height: 250px;
+}
 
 md-card-title {
-    padding: 24px 16px 16px !important;
+	padding: 24px 16px 16px !important;
 }
 
 /*

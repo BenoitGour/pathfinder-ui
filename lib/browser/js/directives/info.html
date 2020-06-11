@@ -2,7 +2,7 @@
 	<div ng-if="routeInfo().length > 0">
 
 		<md-content class="md-padding" layout-xs="column" layout="row">
-			<div flex-xs flex-gt-xs="50" layout="column">
+			<div layout="column">
 				<md-card ng-repeat="info in routeInfo()">
 					<md-card-title>
 						<md-card-title-text>
@@ -10,22 +10,28 @@
 						</md-card-title-text>
 					</md-card-title>
 					<md-card-content>
-						<p>
-							{{info.description}}
-						</p>
-						<md-divider></md-divider>
+						<span class="md-body-2">Description:</span>
 						<pre>
-							<code class="language-json">
-								{{info.details | json}}
-							</code>
+							<code class="language-markdown">{{info.description}}</code>
 						</pre>
+						<md-divider></md-divider>
+
+						<div ng-repeat="details in info.details">
+							<span class="md-body-2">{{details.title}}</span>
+							<pre>
+								<code class="language-json">{{details.content | json}}
+								</code>
+							</pre>
+						</div>
 					</md-card-content>
 				</md-card>
 			</div>
 		</md-content>
 	</div>
 </div>
-{{callUpdate()}}
+
+
+{{updateHighlight()}}
 
 <!-- <pre ng-if="routeInfo().length > 0">
 	{{routeInfo() | json}}
