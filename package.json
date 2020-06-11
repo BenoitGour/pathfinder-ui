@@ -25,10 +25,7 @@
 		}
 	],
 	"dependencies": {
-		"angular-highlightjs": "^0.7.1",
-		"angular-ui-router": "^0.2.15",
-		"express": "^4.13.0",
-		"highlight.js": "^10.0.3"
+		"express": "^4.13.0"
 	},
 	"repository": {
 		"type": "git",
