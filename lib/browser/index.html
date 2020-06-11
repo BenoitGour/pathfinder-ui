@@ -125,6 +125,15 @@
 
 	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/highlight.min.js"></script>
 	<script>hljs.initHighlightingOnLoad();</script>
+
+	<script>
+		angular.element(document).ready(function () {
+			console.log('page loading completed 1');
+		});
+		angular.element(function () {
+			console.log('page loading completed 2');
+		});
+	</script>
 </body>
 
 </html>
