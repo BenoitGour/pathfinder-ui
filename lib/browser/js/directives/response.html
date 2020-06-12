@@ -1,12 +1,18 @@
-<div flex layout="row" class="md-padding sidebar">
+<div flex layout="row" layout-align="center center" class="md-padding sidebar">
 	<pre>
 		<h4>URL: <span>{{reqResponse.config.historicalUrl}}</span></h4>
 		<h4>Status: <span>{{reqResponse.status | json }} {{reqResponse.statusText}}</span></h4>
 		<h4>Headers:<br>
 			<div ng-repeat="(key, value) in resHeaders"><span><b>{{key}}:</b> {{value}}</span><br /></div>
 		</h4>
-		<h4>Response:</h4>
-		<pre><div hljs class="language-json" source="{{ isJson() ? ( reqResponse.data | json) : reqResponse.data }}"></div></pre>
-	</pre>
+		<div>
+			<span  class="md-subhead">Response:</span>
+			<pre>
+				<div hljs class="language-json" source="{{ isJson() ? ( reqResponse.data | json) : reqResponse.data }}">
+
+				</div>
+			</pre>
+</div>
+</pre>
 </div>
 {{updateHighlight()}}
