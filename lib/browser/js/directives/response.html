@@ -3,7 +3,7 @@
         <h4>URL: <span>{{reqResponse.config.historicalUrl}}</span></h4>
         <h4>Status: <span>{{reqResponse.status | json }} {{reqResponse.statusText}}</span></h4>
         <h4>Headers:<br> <div ng-repeat="(key, value) in resHeaders"><span><b>{{key}}:</b> {{value}}</span><br /></div></h4>
-        <h4>Response:<pre><span><code class="language-json" source="{{ isJson() ? ( reqResponse.data | json) : reqResponse.data }}"></code></span></pre>
+        <h4>Response:<pre><span><code class="language-json">{{ isJson() ? ( reqResponse.data | json) : reqResponse.data }}</code></span></pre>
 	</h4>
 	</pre>
 </div>
