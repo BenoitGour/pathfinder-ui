@@ -149,29 +149,32 @@ h4 span {
     padding-top: 14px;
 }
 
-#response {
+.sidebar {
     width: 100%;
 }
 
-#response pre {
+.sidebar pre{
     white-space: normal;
-    font-family: RobotoDraft, Roboto, 'Helvetica Neue', sans-serif;
+	font-family: RobotoDraft, Roboto, 'Helvetica Neue', sans-serif;
+	width: 100%;
 }
 
-#response pre br {
+.sidebar pre br {
     margin: 0;
 }
 
-#response pre pre {
-    margin-top: 0px;
+.sidebar pre pre {
+	margin-top: -25px;
+	margin-bottom: -25px;
     padding: 10px 15px;
     /* background: #f5f2f0; */
     /*background: #272822;*/
     white-space: pre-wrap;
 }
 
-#response code {
-    white-space: pre-wrap;
+.sidebar code {
+	white-space: pre-wrap;
+	display: block;
 }
 
 .routeTableRow {
@@ -201,11 +204,6 @@ h4 span {
     line-height: 1.25em;
 }
 
-pre {
-    max-width: 400px;
-    width: 100%;
-    align-content: center;
-}
 
 code {
     border-radius: 4px !important;

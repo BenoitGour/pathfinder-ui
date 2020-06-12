@@ -1,6 +1,20 @@
-<div flex layout="row" layout-align="center center">
-	<div ng-if="routeInfo().length > 0">
+<div flex layout="column" layout-align="center center" class="md-padding sidebar">
+	<pre ng-repeat="info in routeInfo()" ng-if="routeInfo().length > 0">
+		<span class="md-headline">{{info.name}}</span><br />
+		<span class="md-subhead">Description:</span>
+		<pre>
+			<code class="language-markdown">{{info.description}}</code>
+		</pre>
 
+	<div ng-repeat="details in info.details">
+		<span class="md-subhead">{{details.title}}</span>
+		<pre>
+			<code class="language-json">{{details.content | json}}</code>
+		</pre>
+	</div>
+
+
+	<!-- 
 		<md-content class="md-padding" layout-xs="column" layout="row">
 			<div layout="column">
 				<md-card ng-repeat="info in routeInfo()">
@@ -26,8 +40,8 @@
 					</md-card-content>
 				</md-card>
 			</div>
-		</md-content>
-	</div>
+		</md-content> -->
+
 </div>
 
 
