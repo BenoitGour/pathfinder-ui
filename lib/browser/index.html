@@ -10,9 +10,10 @@
 		href="https://ajax.googleapis.com/ajax/libs/angular_material/0.10.0/angular-material.min.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-
+	<link rel="stylesheet" href="css/style.css" />
 	<link ng-if="theme === 'dark'" rel="stylesheet" href="css/style-dark.css" />
 	<link ng-if="theme === 'light'" rel="stylesheet" href="css/style-light.css" />
+
 
 	<link ng-if="theme === 'dark'" rel="stylesheet"
 		href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/styles/gruvbox-dark.min.css">
@@ -84,12 +85,9 @@
 						</md-tab>
 						<md-tab label="Send">
 							<div ng-controller='SubTabsController'>
-								<md-tabs md-selected="selectedIndex">
-									<md-tab label="Build">
-										<tab1></tab1>
-									</md-tab>
 
-								</md-tabs>
+								<tab1></tab1>
+
 							</div>
 						</md-tab>
 						<md-tab label="Response">

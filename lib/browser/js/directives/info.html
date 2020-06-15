@@ -1,4 +1,10 @@
-<div flex layout="column" layout-align="center center" class="md-padding sidebar">
+<div flex layout="column" layout-align="left center" class="md-padding sidebar">
+
+	<div ng-if="getMethod()" class="method {{getMethod()}}">
+		{{getMethod() | uppercase}}
+	</div>
+
+
 	<pre ng-repeat="info in routeInfo()" ng-if="routeInfo().length > 0">
 		<span class="md-headline">{{info.name}}</span><br />
 		<span class="md-subhead">Description:</span>
