@@ -13,6 +13,11 @@ h4 span {
     font-weight: normal;
 }
 
+body {
+    height: 100vh;
+    min-height: 100vh;
+}
+
 .node {
     cursor: pointer;
 }
@@ -21,20 +26,22 @@ h4 span {
     background-color: #eee;
 }
 
-.node circle {
-    fill: #fff;
-    stroke: steelblue;
-    stroke-width: 1.5px;
+g {
+    fill: whitesmoke;
 }
 
-.visual svg {
-    width: 100%;
-    height: 100vh;
+.node circle {
+    fill: rgba(255, 255, 255, 0.25);
+    stroke: rgba(3, 169, 244, 1);
+    stroke-width: 1.5px;
+
 }
+
 
 .node text {
     font-size: 10px;
     font-family: sans-serif;
+
 }
 
 .link {
@@ -58,14 +65,28 @@ h4 span {
     display: none;
 }
 
-#visualContainer {
-    width: 70%;
+
+.main {
+    height: 100vh !important;
+    overflow: hidden;
+    padding: 20px;
 }
 
 .visual {
     width: 100%;
+    height: 100%;
     display: inline-block;
 }
+
+.visual svg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
 
 .reqForm-container {
     width: 90%;
@@ -76,10 +97,17 @@ h4 span {
 }
 
 .right-bar {
+    margin-bottom: -20px;
+    margin-top: -20px;
+    margin-right: -20px;
     width: 33.33%;
     min-width: 33.33%;
-    border: 1px solid #ddd;
-    background: #fff;
+    border: 1px solid rgba(192, 192, 192, 0.5);
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    box-shadow: -2px 2px 2px rgba(0, 0, 0, .1);
+    color: whitesmoke;
 }
 
 .right-bar .resize-tab {
@@ -89,19 +117,24 @@ h4 span {
     display: flex;
     width: 20px;
     height: 50px;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-right: 1px solid #fff;
+    background: rgb(66, 66, 66);
+    border: 1px solid rgba(192, 192, 192, 0.5);
+    border-right: 1px solid rgb(66, 66, 66);
     overflow: hidden;
     position: relative;
     margin-left: -20px;
     margin-top: calc(50vh - 25px);
     z-index: 2;
+    box-shadow: -2px 2px 2px rgba(0, 0, 0, .1);
 }
 
 .slide {
     -webkit-transition: width 0.5s ease-in-out;
     transition: width 0.5s ease-in-out;
+}
+
+#visualContainer {
+    width: 100%;
 }
 
 .resize-icon {
@@ -153,10 +186,10 @@ h4 span {
     width: 100%;
 }
 
-.sidebar pre{
+.sidebar pre {
     white-space: normal;
-	font-family: RobotoDraft, Roboto, 'Helvetica Neue', sans-serif;
-	width: 100%;
+    font-family: RobotoDraft, Roboto, 'Helvetica Neue', sans-serif;
+    width: 100%;
 }
 
 .sidebar pre br {
@@ -164,8 +197,8 @@ h4 span {
 }
 
 .sidebar pre pre {
-	margin-top: -25px;
-	margin-bottom: -25px;
+    margin-top: -25px;
+    margin-bottom: -25px;
     padding: 10px 15px;
     /* background: #f5f2f0; */
     /*background: #272822;*/
@@ -173,22 +206,30 @@ h4 span {
 }
 
 .sidebar code {
-	white-space: pre-wrap;
-	display: block;
+    white-space: pre-wrap;
+    display: block;
+    max-height: 45vh;
+
 }
 
 .routeTableRow {
-    border-top: 1px solid #d3d3d3;
-    padding: 5px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    /* padding: 5px; */
+}
+
+.routeTableRow:focus {
+    outline: none;
 }
 
 .routeTableCol {
-    border-right: 1px solid #d3d3d3;
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+    ;
     padding: 5px;
 }
 
 #routeTable {
     width: 100%;
+    color: whitesmoke;
 }
 
 .md-button {
@@ -204,11 +245,10 @@ h4 span {
     line-height: 1.25em;
 }
 
-
 code {
     border-radius: 4px !important;
     border: 1px solid rgba(0, 0, 0, 0.25);
-    min-height: 250px;
+    min-height: 250px !important;
     width: 100%;
 }
 
@@ -216,30 +256,105 @@ md-card-title {
     padding: 24px 16px 16px !important;
 }
 
-/*
-.right-bar {
-	width: 30%;
-	height: 100%;
-	float:right;
-	border-style: solid;
-	border-width: 1px;
-	border-color: green;
-	display:inline-block;
+md-content {
+    height: 100%;
 }
 
-.tab-btns {
-	border-style: solid;
-	border-width: 1px;
-	border-color: purple;
+.method {
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 4px;
+    width: 60px;
+    text-align: center;
+    text-shadow: 0px 1px rgba(0, 0, 0, .1);
+    border: 1px solid rgba(255, 255, 255, .25);
+    font-weight: bold;
 }
 
-.tab-btns .tab-btn {
-	border-style: solid;
-	border-color: orange;
+.method.get {
+    background-color: seagreen;
+
 }
 
-.tab {
-	border-style: solid;
-	border-width: 1px;
-	border-color: red;
-}*/
+.method.post {
+    background-color: darkorange;
+}
+
+.method.put,
+.method.patch {
+    background-color: royalblue;
+
+}
+
+.method.delete {
+    background-color: tomato;
+}
+
+.routeTableRow:focus {
+    outline: none;
+}
+
+.routeTableRow:focus.get {
+    background-color: rgba(46, 139, 86, 0.15);
+}
+
+.routeTableRow:focus.post {
+    background-color: rgba(255, 140, 0, 0.15);
+}
+
+.routeTableRow:focus.put,
+.routeTableRow:focus.patch {
+    background-color: rgba(65, 105, 225, 0.1)
+}
+
+.routeTableRow:focus.delete {
+    background-color: rgba(255, 99, 71, 0.1)
+}
+
+
+
+
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+::-webkit-scrollbar-button {
+    width: 4px;
+    height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #808080;
+    border: 0px solid #ffffff;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #979797;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #bdbdbd;
+}
+
+::-webkit-scrollbar-track {
+    background: #424242;
+    border: 0px solid #ffffff;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-track:hover {
+    background: #606060;
+}
+
+::-webkit-scrollbar-track:active {
+    background: #333333;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
