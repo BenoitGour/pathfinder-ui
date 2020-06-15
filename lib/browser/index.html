@@ -9,26 +9,52 @@
 	<link rel="stylesheet"
 		href="https://ajax.googleapis.com/ajax/libs/angular_material/0.10.0/angular-material.min.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css" />
 
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/styles/gruvbox-dark.min.css">
+
+	<link ng-if="theme === 'dark'" rel="stylesheet" href="css/style-dark.css" />
+	<link ng-if="theme === 'light'" rel="stylesheet" href="css/style-light.css" />
+
+	<link ng-if="theme === 'dark'" rel="stylesheet"
+		href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/styles/gruvbox-dark.min.css">
+	<link ng-if="theme === 'light'" rel="stylesheet"
+		href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/styles/foundation.min.css">
 
 
 </head>
 
-<body>
+<body md-theme="{{theme}}">
 
-	<md-content class='md-hue-3' ng-view>
+	<div class="theme-selector">
+		<md-button ng-if="theme === 'dark'" type="button" class="md-accent md-button" ng-click="toggleTheme()"><i
+				class="material-icons md-48">
+				emoji_objects
+			</i>
+		</md-button>
+		<md-button type="button" ng-if="theme === 'light'" class="md-accent md-button  " ng-click="toggleTheme()"><i
+				class="material-icons">
+				emoji_objects
+			</i>
+		</md-button>
+	</div>
 
-		<div layout='row' class="main">
+
+	<md-content class="{{(theme==='dark')?'md-hue-3':''}}" ng-view>
+
+		<div layout='row' class=" main">
 			<!-- D3.JS VISUAL HERE -->
 			<div id="visualContainer" class="slide">
-				<md-button ng-if="selected === 'Tree'" type="button"
-					class="md-primary md-button md-default-theme md-raised" ng-click="changeDisplay('Table')">View As
-					Table</md-button>
-				<md-button type="button" ng-if="selected === 'Table'"
-					class="md-primary md-button md-default-theme md-raised" ng-click="changeDisplay('Tree')">View As
-					Tree</md-button>
+				<div>
+					<md-button ng-if="selected === 'Tree'" type="button" class="md-primary md-button md-raised"
+						ng-click="changeDisplay('Table')">View
+						As
+						Table</md-button>
+					<md-button type="button" ng-if="selected === 'Table'" class="md-primary md-button  md-raised"
+						ng-click="changeDisplay('Tree')">View As
+						Tree</md-button>
+				</div>
+
+
+
 				<div ng-show="selected === 'Tree'" class="visual" id="route-tree" tree-visual="">
 				</div>
 

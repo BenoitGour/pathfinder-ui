@@ -16,6 +16,7 @@ h4 span {
 body {
     height: 100vh;
     min-height: 100vh;
+    color: #131313;
 }
 
 .node {
@@ -27,7 +28,7 @@ body {
 }
 
 g {
-    fill: whitesmoke;
+    fill: #131313;
 }
 
 .node circle {
@@ -107,7 +108,7 @@ g {
     border-bottom: none;
     border-right: none;
     box-shadow: -2px 2px 2px rgba(0, 0, 0, .1);
-    color: whitesmoke;
+
 }
 
 .right-bar .resize-tab {
@@ -213,7 +214,7 @@ g {
 }
 
 .routeTableRow {
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
     /* padding: 5px; */
 }
 
@@ -222,14 +223,14 @@ g {
 }
 
 .routeTableCol {
-    border-right: 1px solid rgba(255, 255, 255, 0.15);
+    border-right: 1px solid rgba(0, 0, 0, 0.15);
     ;
     padding: 5px;
 }
 
 #routeTable {
     width: 100%;
-    color: whitesmoke;
+
 }
 
 .md-button {
@@ -261,6 +262,7 @@ md-content {
 }
 
 .method {
+    color: whitesmoke;
     padding-left: 8px;
     padding-right: 8px;
     padding-top: 2px;
@@ -269,7 +271,7 @@ md-content {
     width: 60px;
     text-align: center;
     text-shadow: 0px 1px rgba(0, 0, 0, .1);
-    border: 1px solid rgba(255, 255, 255, .25);
+    border: 1px solid rgba(0, 0, 0, .25);
     font-weight: bold;
 }
 
@@ -328,33 +330,73 @@ md-content {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #808080;
+    background: #535353;
     border: 0px solid #ffffff;
     border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #979797;
+    background: #3a3a3a;
 }
 
 ::-webkit-scrollbar-thumb:active {
-    background: #bdbdbd;
+    background: #3a3a3a;
 }
 
 ::-webkit-scrollbar-track {
-    background: #424242;
+    background: whitesmoke;
     border: 0px solid #ffffff;
     border-radius: 4px;
 }
 
 ::-webkit-scrollbar-track:hover {
-    background: #606060;
+    background: #fafafa;
 }
 
 ::-webkit-scrollbar-track:active {
-    background: #333333;
+    background: #fafafa;
 }
 
 ::-webkit-scrollbar-corner {
     background: transparent;
+}
+
+.material-icons {
+    color: #131313;
+}
+
+.theme-selector {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    z-index: 1000;
+}
+
+
+.material-icons {
+    position: relative;
+    top: 5px;
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
 }
