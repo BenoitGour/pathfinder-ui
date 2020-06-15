@@ -313,6 +313,10 @@ md-content {
     z-index: 1000;
 }
 
+.theme-selector>button {
+    min-width: 37;
+}
+
 
 .material-icons {
     position: relative;
